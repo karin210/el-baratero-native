@@ -12,11 +12,11 @@ I18n.translations = {
 
 // Set the locale once at the beginning of your app
 const locales = getLocales();
-const locale = locales[0]?.languageCode || 'en';
+const locale = locales[0]?.languageCode || 'es';
 
-I18n.locale = locale.startsWith('es') ? 'es' : 'en';
+I18n.locale = locale.startsWith('en') ? 'en' : 'es';
 
-// Enable fallback to English if a translation is missing
+// Enable fallback to English if a translation is missing in Spanish
 I18n.enableFallback = true;
 I18n.fallbacks = {
   es: 'en',
