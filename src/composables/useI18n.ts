@@ -8,7 +8,7 @@ export function useI18n() {
     (I18n.locale as Language) || 'en'
   );
 
-  const t = useCallback((key: string, options?: Record<string, any>) => {
+  const translate = useCallback((key: string, options?: Record<string, any>) => {
     return I18n.t(key, options);
   }, []);
 
@@ -23,7 +23,7 @@ export function useI18n() {
   }, [locale, changeLanguage]);
 
   return {
-    t,
+    translate,
     locale,
     changeLanguage,
     toggleLanguage,

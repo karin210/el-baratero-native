@@ -9,7 +9,7 @@ import { products } from '@/data/products';
 import { useI18n } from '@/composables/useI18n';
 
 function HomeHeader(): React.JSX.Element {
-  const { t } = useI18n();
+  const { translate } = useI18n();
 
   return (
     <ThemedView style={styles.header}>
@@ -19,10 +19,10 @@ function HomeHeader(): React.JSX.Element {
       />
       <ThemedView style={styles.headerContent}>
         <ThemedText type="subtitle" role="heading">
-          {t('home.title')}
+          {translate('home.title')}
         </ThemedText>
         <ThemedText themeColor="textSecondary">
-          {t('home.subtitle')}
+          {translate('home.subtitle')}
         </ThemedText>
       </ThemedView>
     </ThemedView>
