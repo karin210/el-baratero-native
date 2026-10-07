@@ -1,4 +1,3 @@
-import { getLocales } from 'expo-localization';
 import I18n from 'i18n-js';
 
 import en from './en.json';
@@ -10,11 +9,10 @@ I18n.translations = {
   es: es,
 };
 
-// Set the locale once at the beginning of your app
-const locales = getLocales();
-const locale = locales[0]?.languageCode || 'es';
-
-I18n.locale = locale.startsWith('en') ? 'en' : 'es';
+// Set the locale once at the beginning of your app (web)
+// Use browser's language setting
+const browserLanguage = navigator.language || 'es';
+I18n.locale = browserLanguage.startsWith('en') ? 'en' : 'es';
 
 // Enable fallback to English if a translation is missing in Spanish
 I18n.enableFallback = true;
