@@ -1,0 +1,16 @@
+{
+  "common": {
+    "home": "Home",
+    "explore": "Explore",
+    "settings": "Settings"
+  },
+  "home": {
+    "title": "New arrivals",
+    "subtitle": "Fresh styles for the season, at boutique-friendly prices."
+  },
+  "product": {
+    "price": "Price",
+    "addToCart": "Add to cart",
+    "outOfStock": "Out of stock"
+  }
+}

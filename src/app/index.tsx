@@ -6,8 +6,11 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { products } from '@/data/products';
+import { useI18n } from '@/composables/useI18n';
 
 function HomeHeader(): React.JSX.Element {
+  const { t } = useI18n();
+
   return (
     <ThemedView style={styles.header}>
       <Image
@@ -16,10 +19,10 @@ function HomeHeader(): React.JSX.Element {
       />
       <ThemedView style={styles.headerContent}>
         <ThemedText type="subtitle" role="heading">
-          New arrivals
+          {t('home.title')}
         </ThemedText>
         <ThemedText themeColor="textSecondary">
-          Fresh styles for the season, at boutique-friendly prices.
+          {t('home.subtitle')}
         </ThemedText>
       </ThemedView>
     </ThemedView>

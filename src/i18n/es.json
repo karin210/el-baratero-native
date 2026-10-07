@@ -1,0 +1,16 @@
+{
+  "common": {
+    "home": "Inicio",
+    "explore": "Explorar",
+    "settings": "Configuración"
+  },
+  "home": {
+    "title": "Nuevas llegadas",
+    "subtitle": "Estilos frescos para la temporada, a precios amigables."
+  },
+  "product": {
+    "price": "Precio",
+    "addToCart": "Agregar al carrito",
+    "outOfStock": "Agotado"
+  }
+}
