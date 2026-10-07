@@ -6,7 +6,7 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { products } from '@/data/products';
-import { useI18n } from '@/composables/useI18n';
+import { useI18n } from '@/hooks/useI18n';
 
 function HomeHeader(): React.JSX.Element {
   const { translate } = useI18n();
